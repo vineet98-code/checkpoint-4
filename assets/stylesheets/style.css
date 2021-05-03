@@ -91,7 +91,7 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 1380px;
     margin: 0 auto;
     width:100%; 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .padding{
     padding: 60px 0;
