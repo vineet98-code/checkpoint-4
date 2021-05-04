@@ -64,9 +64,7 @@ button {
     border: 0;
 }
 /* General style */
-/* html{
-    font-size: 16px;
-} */
+
 body{
     font-size: 16px;
     line-height: 1.5;
@@ -347,6 +345,7 @@ margin-left: 30px;
   color: #ffffff;
 }
 .box-btn{
+    background-color: #EC7048;
     margin-left: 110px;
     border-radius: 20px;
 }
@@ -671,13 +670,12 @@ margin-left: 30px;
 }
 .portfolio-box{
     padding: 8px 16px;
-    /* background-color: #FCF1EC; */
-    /* margin:4px 10px; */
     border-radius: 20px;
 }
 .portfolio-para{
     color: #6F6F6F;
     text-align: center;
+    font-family: 'Raleway', sans-serif
 }
 .active-portfolio{
     color: var(--accent);
@@ -697,10 +695,8 @@ margin-left: 30px;
 }
 .portfolio-image{
     position: relative;
-
 }
 .portfolio-image:hover .portfolio-text{
-    
     visibility: visible;
 }
 .portfolio-text{
@@ -710,9 +706,7 @@ margin-left: 30px;
     position: absolute;
     top: 204px;
     background-color:rgba(255, 255, 255, 0.9);
-    /* margin: 0 auto; */
     right: 19px;
-
     visibility: hidden;
 }
 .portfolio-subheading{
@@ -728,6 +722,7 @@ margin-left: 30px;
     padding: 30px;
     margin-bottom: 20px;
 }
+
 /* TEAM SECTION */
 .flex-21{
     flex: 0 1 21.57%;
@@ -740,7 +735,6 @@ margin-left: 30px;
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    /* position: relative; */
 }
 .team-media-social{
     width: 100%;
@@ -748,10 +742,8 @@ margin-left: 30px;
     position: absolute;
     top: 237px;
     background-color:rgba(255, 255, 255, 0.9);
-    /* margin: 0 auto; */
     right: 0;
     visibility: hidden;
-    /* display: none; */
 }
 .team-image:hover .team-media-social{
     visibility: visible;
@@ -769,10 +761,6 @@ margin-left: 30px;
 }
 .social-media-link-team{
     color:var(--textDark)
-}
-.nav-team{
-    /* margin: 0 auto; */
-
 }
 .team-para{
     color: #635551;
@@ -796,8 +784,6 @@ margin-left: 30px;
     text-transform: capitalize;
 }
 /* PRICING SECTION */
-
-
 .col{
   border: 3px solid #F8F8F8;
   margin-left: 20px;
@@ -824,7 +810,6 @@ margin-left: 30px;
 }
 .F8F8F8{
     color: #F8F8F8;
-
 }
 .dollar{
     margin: 10px 0;
