@@ -91,7 +91,8 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 1380px;
     margin: 0 auto;
     width:100%; 
-    /* border: 2px solid red; */
+    /* border: 2px solid red;
+     */
 }
 .padding{
     padding: 60px 0;
@@ -131,6 +132,9 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 20px;
 }
 /* Column */
+.flex-22{
+    flex: 0 1 22%;
+}
 .flex-32{
     flex: 0 1 32%;
 }
@@ -433,7 +437,7 @@ margin-left: 30px;
     color: #554945;
 }
 .article{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 .about-circle{
     display: flex;
@@ -741,7 +745,6 @@ margin-left: 30px;
 .team-media-social{
     width: 100%;
     padding: 10px;
-    background-color: #fff;
     position: absolute;
     top: 237px;
     background-color:rgba(255, 255, 255, 0.9);
@@ -793,12 +796,8 @@ margin-left: 30px;
     text-transform: capitalize;
 }
 /* PRICING SECTION */
-.pricing{
 
-}
-.flex-22{
- flex: 0 1 22%;
-}
+
 .col{
   border: 3px solid #F8F8F8;
   margin-left: 20px;
@@ -923,10 +922,9 @@ margin-left: 30px;
 .form-container{
     background-color: #ffffff;
     padding: 10px 133px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     text-align: center;
     margin: 0 auto;
-
 }
 .fieldset{
     padding: 20px;
@@ -973,7 +971,7 @@ margin-left: 30px;
     padding: 25px;
 }
 .heading-link{
-    font-weight: 600;
+    font-weight: 900;
     margin-right: 30px;
 }
 .newsletter-heading{
@@ -992,9 +990,15 @@ margin-left: 30px;
 .links-items i{
   color: var(--accent);
 }
+
 .links-items li{
     margin: 10px 0;
     text-transform: capitalize;
+    
+}
+.links-items a{
+  text-decoration: none;
+  color: var(--textDark);
 }
 .subscriber-btn{
     border-radius: 24px;
@@ -1015,10 +1019,10 @@ margin-left: 30px;
 small{
     text-transform: capitalize;
 }
-.nav{
+.nav-media{
 	display: flex;
 	/* justify-content: center; */
-    margin-right: 35px;
+    margin-left: 20px;
 }
 .social-media{
 	width:40px;
@@ -1030,6 +1034,11 @@ small{
 	background-color: var(--accent);
 	/* margin-left: 10px; */
     margin-right: 10px;
+}
+.footer-copyright-content{
+    display: flex;
+    justify-content: space-evenly;
+
 }
 .social-media a{
     color: #ffffff;
@@ -1059,9 +1068,7 @@ small{
   font-size: 15px;
   margin: 10px 0;
 }
-.content-blog{
-    /* text-align: right; */
-}
+
 .small-blog i{
     margin-right: 10px;
 }
@@ -1106,6 +1113,216 @@ small{
  .left-box{
      color: #eeeaea;
  }
+
+ .bars{
+     visibility: hidden;
+ }
+ #toggle{
+    display: none;
+}
+
+ /* /* RESPONSIVE DESIGN AND MEDIA QUERY */  
+
+ 
+/* MEDIA QUERY FOR SAMLL SCREENS */
+@media screen and (max-width: 576px) {
+    html {
+      font-size: 10px;
+    }
+    .container {
+      max-width: 520px;
+    }
+    .sm-column{
+        flex-direction: column;
+    }
+    .very-sm-flex-100 {
+      flex: 0 1 100%;
+      margin: 10px 10px;
+    } 
+    .services {
+      padding: 2rem 0 0 0;
+    }
+    .very-sm-width{
+        width: 80%;
+    }
+    .v-sm-margin-left{
+        margin-left: 210px;
+    }
+    .contact {
+      padding: 0 0 2rem 0;
+    }
+    /* FOOTER */
+    .footer {
+      padding: 2rem 0 0 0;
+    }
+}
+@media screen and (max-width: 768px){
+    html{
+        font-size: 10px;
+    }
+    /* General */
+    .container{
+        max-width: 720px;
+    }
+    .sm-flex-100{
+        flex: 0 1 100%;
+        margin: 2rem 0; 
+    }
+    .sm-flex-25{
+        flex: 0 1 15%;
+    }
+    .sm-flex-48{
+        flex: 0 1 48%;
+        margin: -0.1rem 0;
+    }
+    .sm-flex-46{
+        flex: 0 1 46%;
+        margin: 10px 10px;
+    }
+    .sm-flex-45{
+        flex: 0 1 45%;
+        margin: 65px 10px;
+    }
+    .team-text{
+        margin-bottom: 20px;;
+    }
+    .sm-flex-43{
+        flex: 0 1 43%;
+    }
+    .sm-wrap{
+        flex-wrap: wrap;
+    }
+    .sm-width-full{
+        width:100%;
+    }
+    .order-1{
+        order: 1;
+    }
+    .sm-text-center{
+        text-align: center;
+    }
+    .sm-flex-50{
+       flex: 0 1 50%;
+    }
+
+    /* Navbar */
+    .nav-bar{
+        background-color: #ffffff;
+        height: 80px;
+        position: fixed;
+        z-index: 999;
+    }
+    .nav-menu-item a{
+        font-weight: 800;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    .nav{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 120vh;
+        background-color: rgba(17, 17, 17, 0.9);
+        padding-top: 12rem;
+        z-index: 9;
+    }
+    #toggle:checked ~ .nav {
+        display: inline-block;
+    }
+    .bars{
+        font-size: 2rem;
+        color: var(--textWhite);
+        visibility: visible;
+        z-index: 99;
+        display: inline-block;
+        color: var(--accent);
+    }
+    .brand, .bars{
+        position: fixed;
+        top: 1.5rem;
+        z-index: 99;
+    }
+    .brand{
+        left: 2rem;
+    }
+    .bars{
+        right: 2rem;
+    }
+    .value-content{
+        position: relative;
+        /* height: 70px; */
+    }
+    .value-content img{
+        height: 290px;
+    }
+    .value-text{
+        width: 80%;
+        height: 180px;
+        position: absolute;
+        bottom: 0;
+        top: 90px;
+        left: 35px;
+        right: 0px;
+        text-align: left;
+    } 
+    .media-query-column{
+        flex-direction: column;
+    }
+
+    /* SERVICES */
+    .services-circle{
+        margin-left: 128px;
+    }
+    .services-article{
+        margin-bottom: 20px;
+    }
+    /* FAQ */
+    .faq-menu{
+        padding: 16px 12px;
+    }
+    /* CONTACT */
+    .contact-menu{
+        margin: 0 auto;
+    }
+    /* FORM CONTAINER */
+    .form-container{
+        padding : 10px 10px;
+    }
+    .subscriber-btn{
+        right: 45px;
+    }
+    .heading-link{
+        font-weight: 900;
+    }
+   
+    /* HERO */
+    .hero{
+        height:auto;
+        padding: 6rem 0;
+    }
+    .hero img{
+        max-height: 500px;
+        object-fit: cover;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+    }
+    .h4{
+        font-size: 24px;
+        font-weight: 800;
+    }
+    /* FOOTER COPYRIGHT */
+    
+    small{
+        text-align: center;
+         margin-bottom: 20px;
+    }
+    .footer-copyright-content{
+        margin: 10px auto;
+    }
+}
 
 
 
